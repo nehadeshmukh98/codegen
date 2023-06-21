@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./aboutus.htm">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* background-color: #001529; */
+            height: 100px;
+            width: 100px;
+            /* position:absolute; */
+            /* z-index: -1; */
+            /* margin: 20px;
+            /* padding: 3px;  */
+        }
+
+        .flex ul li {
+            margin-top: 40px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 20px ;
+
+            cursor: pointer;
+            /* padding: px ; */
+        }
+
+        .flex ul{
+            left: 900px;
+            /* top:20px; */
+            padding: 10px;
+            position: absolute;
+        }
+
+        .flex ul li a{
+            /* margin: 20px; */
+            /* text-decoration: none; */
+            color: azure;
+            font-size: 24px;
+            /* display: inline-block; */
+            /* font-family: apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; */
+        }
+
+        .logo1{
+            height: 150px;
+            width: 150px;
+            position: relative;
+            cursor:pointer;
+        }
+
+        .heading{
+            top: 180px;
+            left: 100;
+            margin: 100px;
+            position: absolute;
+        }
+
+        .heading h1{
+            font-size: 90px;
+            color: azure;
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading h2{
+            color: azure;
+        }
+
+        .heading h1:hover{
+            color: blueviolet;
+        }
+
+        .heading h2:hover{
+            color:cadetblue;
+        }
+  
+        .video-back{
+            position: absolute;
+            width: 2000px;
+            right: 0;
+            bottom: 0;
+            margin-top:910px;
+            z-index: -6;
+            /* padding: 10px; */
+            /* margin: 100px; */
+        }
+        #para1{
+            color: azure;
+            margin-top: 10px;
+
+        }
+        .bgcolor{
+            background-color: #001529;
+            /* box-sizing: border-box; */
+            justify-content: space-between;
+            height: 150px;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            /* color: aliceblue; */
+        }
+
+        /* This for services menu */
+        .content1{
+            height: 1300px;
+            margin-top: 680px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* display: inline; */
+
+        }
+        /* .content2{ */
+            /* height: 800px;
+            background-color: cadetblue;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .content3{
+            height: 800px;
+            background-color: blanchedalmond;
+            width: 100%;
+        } */
+        /* this is for boxes in services menu */
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #001529;
+            border-radius: 8px;
+            margin-top: 100px;
+            box-shadow: 9px 8px 21px -1px rgba(243,16,16,.5);
+            height: 250px;
+            margin: 50px;
+            width:250px;
+            padding: 20px;
+        }
+
+        .box:hover{
+            transform: scale(1.2);
+        }
+
+        /* .servicesbox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        } */
+
+        .logo{
+            height: 40px;
+            width: 40px;
+            background-color:#001529 ;
+            box-shadow: 2px 2px 2px rgb(117, 117, 166);
+            margin-left: 10px;
+            margin-top: 20px;
+
+        }
+        #heading1{
+            color: azure;
+            align-content: center ;
+            margin-left: 20px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        #para{
+            color: azure;
+            font-size: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 17px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #head1{
+            color: black;
+            /* text-align: center; */
+            display: block;
+            /* background-color: aqua; */
+            /* border-color: black; */
+            position:absolute;
+            z-index: -1;
+            /* margin: -80p/x; */
+            /* padding-bottom: 900px; */
+            margin-left: 650px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        .test{
+            background-color: #001529;
+            height: 250px;
+            width: 400px;
+            border-radius: 20px;
+        }
+
+        /* .footer{
+            background-color: #001529;
+            height: 300px;
+            width: 600%;
+            /* margin-top: 2000px; */
+        /* }  */
+    </style>
+</head>
+<body>
+    <div>
+        <video autoplay loop muted plays-inline class="video-back">
+            <!-- self closing tag -->
+            <source src="./images/back.mp4">
+         </video> 
+         <header>
+            <div class="bgcolor">
+                <div class="flex">
+                    <img src="./images/logo.png" alt="" class="logo1">
+                    <ul>
+                        <li class="item-1"> <a href="#">Home</a></li>
+                        <li class="item-2"> <a href="#div1">Services</a> </li>
+                        <li class="item-3"> <a href="./aboutus.htm">About us</a> </li>
+                        <li class="item-4"> <a href="#div3">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <div class="heading">
+            <h1>CodeGen Technologies</h1>
+            <h2>The Pioneers Of Coding Generation</h2>
+            <p id="para1">
+            te itaque reiciendis cumque aperiam fuga vel? Laborum delectus, numquam ab quas sint magnam repudiandae adipisci vel iure, aut sapiente, voluptatem facilis ut 
+            Maiores voluptatem doloremque aliquid, possimus nemo dignissimos sed non error esse recusandae sint! Ex, dolore atque. Ducimus quaerat tempora mollitia eos suscipit</p>
+        </div>
+        <br>
+       
+        <div class="services container">
+            <h1 id="head1">All Services</h1>
+            <div class="content1" id="div1">
+                <!-- <div id="head1">
+                 
+                </div> -->
+              <div class="box" id="box-1">
+                 <img src="./images/pexels-markus-spiske-1089440.jpg" class="logo" alt="">
+                
+                 <h3 id="heading1">Full Stack Web Development</h3>
+                 <p id="para">Learn to build dynamic and responsive web applications using a combination of front-end and back-end technologies</p>
+              </div>
+
+              <div class="box" id="box-2">
+                  <img src="./images/database.jpeg" class="logo" alt="">
+
+                 <h3 id="heading1">Database Management and <br>Integration</h3>
+                 <p id="para">
+                    Master the skills to design and manage databases, and integrate them with web applications
+                 </p>
+              </div>
+
+              <div class="box" id="box-3">
+                    <img src="./images/version.jpeg" alt="" class="logo">
+
+                    <h3 id="heading1">Version Control and Collaboration</h3>
+                    <p id="para">
+                        Gain expertise in using version control systems like Git and collaborate effectively with other developers
+                    </p>
+              </div>
+
+             <div class="box" id="box-4">
+                <img src="./images/ui.jpeg" alt="" class="logo">
+
+                    <h3 id="heading1">UI/UX Design and Development</h3>
+                    <p id="para">
+                        Learn the principles of user interface and user experience design and implement them in web development projects
+                    </p>
+              </div>
+
+              <div class="box" id="box-5">
+                <img src="./images/api.jpg" alt="" class="logo">
+
+                <h3 id="heading1">API Development and Integration</h3>
+                <p id="para">
+                    Explore the concepts of building and integrating APIs to enable communication between different software applications
+                </P>
+              </div>
+
+              <div class="box" id="box-6">
+                <img src="./images/devops.jpeg" alt="" class="logo">
+                <h3 id="heading1">Deployment and DevOps</h3>
+                <p id="para">
+                    Learn the process of deploying web applications and implementing DevOps practices for efficient development and deployment
+                </p>
+              </div>
+
+              <div class="box" id="box-7">
+
+                <img src="./images/testing.jpeg" alt="" class="logo">
+
+                <h3 id="heading1">Testing and Debugging</h3>
+                <p id="para">Master the techniques of testing and debugging web applications to ensure their functionality and performance</p>
+              </div>
+
+              <div class="box" id="box-8">
+
+                <img src="./images/security.jpeg" alt="" class="logo">
+
+                <h3 id="heading1">Security and Authentication</h3>
+                <p id="para">
+                    Understand the importance of web application security and learn to implement authentication and authorization mechanisms
+                </p>
+              </div>
+
+              <div class="box" id="box-9">
+                <img src="./images/agile.jpeg" alt="" class="logo">
+
+                <h3 id="heading1">Project Management and Agile Development</h3>
+                <p id="para">
+                    Acquire project management skills and learn to follow Agile methodologies for efficient software development
+                </p>
+              </div>
+            </div>
+        </div>
+        
+            
+    </body> 
+</html>

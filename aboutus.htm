@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bgcolor{
+            background-color: #001529;
+            border: 1px solid black;
+            height: 350px;
+            border: 1px solid red;
+
+        }
+        .flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid black;
+            /* background-color: #001529; */
+            /* margin: 20px;
+            padding: 3px; */
+        }
+        .logo{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            cursor:pointer;
+        }
+        .flex ul li {
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px ;
+        }
+
+        .flex ul{
+            left: 900px;
+            top:50px;
+            margin: 10px;
+            position: absolute;
+        }
+
+        .flex ul li a{
+            /* margin: 20px; */
+            /* text-decoration: none; */
+            color: azure;
+            font-size: 24px;
+        }
+        .heading{
+            color: azure;
+            margin-top: 100px;
+            margin-left: 50px;
+            position: absolute  ;
+            top: 10px;
+            left: 20px;
+            /* border: 1px solid black; */
+            /* background-color: aqua; */
+            /* height: 100px; */
+        }
+        .second{
+            padding: 70px;
+            padding-right: 110px;
+            /* display: block; */
+            height: 500px;
+            width: 800%;
+            /* background-color: aqua; */
+            margin: 110px;
+            margin-top: -10px;
+        }
+
+        #para1{
+            font-size: 18px;
+        }
+        .boxcontainer{
+            display: flex;
+            flex-wrap: wrap;
+            /* padding-right: 900px; */
+            /* margin-right: 100px; */
+            /* background-color:bisque; */
+            margin-top: 100px;
+            width: 1600%;
+            height: 400px;
+            /* height: 100px; */
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            margin-top: 50px;
+            /* padding: 10px;   */
+            /* margin-bottom:px;   */
+            /* margin-top: 40px; */
+            /* padding-left: 120px; */
+           /* border: 2px solid black; */
+           background-color: #f2f2f2;
+           display:flex;
+           margin : 30px;
+           padding: 10px;
+           border-radius: 20px; 
+           /* justify-content: space-evenly;     */
+            /* flex-wrap: wrap; */   
+            /* background-color:bisque; */
+        }
+        .box:hover{
+            transform: scale(1.1);
+           box-shadow: 10px 10px 10px skyblue ;
+
+
+        }
+        .disp{
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content:end;
+            align-items: flex-start;
+            /* display: flex; */
+           /* margin: 90px 250px 60px 50px; */
+             padding-left: 40px;
+        }
+
+        #para{
+            margin-top: 110px;
+            margin-left: 64px;
+            position: absolute;
+
+        }
+        #head{
+            margin-top: 150px;
+            margin-left: 56PX;
+            position: absolute;
+        }
+        .logo1{
+            height: 70px;
+            width: 70px;
+            /* margin:0px; */
+            padding-left: 60px;
+            padding-top: 20px;
+            border-radius: 10px;
+            /* box-shadow: 4px 4px 5px red; */
+
+        }
+   
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="bgcolor">
+                <div class="flex">
+                    <img src="./images/logo.png" alt="" class="logo">
+                    <ul>
+                        <li class="item-1"> <a href="./project1.html">Home</a></li>
+                        <li class="item-2"> <a href="#div1">Services</a> </li>
+                        <li class="item-3"> <a href="#div2">About us</a> </li>
+                        <li class="item-4"> <a href="#div3">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- <h1>Hello</h1> -->
+                <div class="heading">
+                    <h1><b>About US</b></h1>
+                    <h2>UX & quality-focused digital engineering company</h2>
+                </div>   
+                
+            </div>
+        </header>
+            <div class="disp">
+                <div class="second">
+                    <h1><b>Who we are?</b></h1>
+                    <p id="para1">Coditas is a User Experience & quality-focused digital engineering company that enables enterprises to build and run cutting-edge digital business models. Backed by a team of 900+ passionate engineers and designers, we constitute an engineering-driven, people-first culture and are a certified Great Place To Work. We have been providing quality solutions to multi-billion dollar brands across the globe, including JPMC, HDFC, DMart, Symantec, and more. With steadfast philosophies around writing clean code and designing intuitive user experiences, Coditas has experienced 50% YOY growth, the current best in the software service industry.</p>
+                </div>
+                
+                <div class="boxcontainer">
+                    <div class="box" id="box-1">
+                        <img src="./images/ux.jpeg" alt="" class="logo1">
+                        <p id="para">Intuitive</p>
+                        <h4 id="head">User Experience</h4>
+
+                    </div>
+                    <div class="box" id="box-2">
+                        <img src="./images/web.jpeg" alt="" class="logo1">
+                        <p id="para">
+                            Scalable
+                        </p>
+                        <h4 id="head">
+                            Web and Mobile<br>Apps
+                        </h4>
+            
+                    </div>
+                    <div class="box" id="box-3">
+                        <img src="./images/leader.jpeg" alt="" class="logo1">
+                        <p id="para">Young</p>
+                        <h4 id="head">Leadership</h4>
+                        
+                    </div>
+                    <div class="box" id="box-4">
+                        <img src="./images/development.jpeg" alt="" class="logo1">
+                        <p id="para">Product</p>
+                        <h4 id="head">Development</h4>
+                    </div>
+                </div>
+            </div>
+            
+        
+        </div>
+       
+</body>
+</html>
